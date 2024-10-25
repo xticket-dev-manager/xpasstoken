@@ -1,0 +1,26 @@
+{
+  "name": "xtc_erc20",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-xpass": "npx hardhat test test/xpasstoken.js",
+    "deploy-testnet": "npx hardhat run scripts/deploy.js --network sepolia",
+    "deploy-mainnet": "npx hardhat run scripts/deploy.js --network mainnet",
+    "deploy-mainnet2": "npx hardhat run scripts/deploy.js --network mainnet2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "chai": "^5.1.1",
+    "ethereum-waffle": "^4.0.10",
+    "hardhat": "^2.22.12"
+  },
+  "dependencies": {
+    "chai-as-promised": "^7.1.2",
+    "dotenv": "^16.4.5"
+  }
+}
